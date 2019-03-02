@@ -1,0 +1,43 @@
+body {
+  align-items: center;
+  background-image: url("chemistry.jpg");
+  background-size: cover;
+  color: #fefefe;
+  font-family: ayuthaya;
+}
+body input {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fefefe;
+  border: 0;
+  padding: 5px;
+}
+body h1, body .instructions {
+  text-align: center;
+}
+body #atomsGoHere {
+  margin-top: 50px;
+}
+body .inputAreas {
+  margin-left: 50px;
+  font-size: 20px;
+}
+body .result {
+  margin-top: 40vh;
+  float: right;
+  margin-right: 10vw;
+  font-size: 30px;
+}
+body .result button {
+  padding: 15px;
+  opacity: 0.6;
+  border-radius: 100%;
+}
+body .result button:hover {
+  opacity: 1;
+}
+body #atomsGoHere {
+  margin-left: 10vw;
+  width: 70vw;
+}
+
+/*# sourceMappingURL=style.css.map */

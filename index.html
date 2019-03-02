@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="./app.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <h1>RADIOACTIVE DECAY</h1>
+    <h3 class="instructions">This is an interactive tool to help you understand radioactive decay. Enter the initial sample you want to test, the half-life and the decay time in order to find out what the remaining sample will be. A visual guide (rough estimation of remaining sample) is provided. </h3>
+    <section class="inputAreas">
+      <div class="">
+        <label for="">INITIAL SAMPLE: </label>
+        <input onchange="calculateRemainingSample()" id="initialSample" type="number" name="initialSample" value="0" min="0" max="100"><span> g </span>
+      </div>
+      <div class="">
+        <label for="">HALF-LIFE: </label>
+        <input onchange="calculateRemainingSample()" id="halfLife" type="number" name="halfLife" value="50" min="50" max="100"><span> years </span>
+      </div>
+      <div class="">
+        <label for="">DECAY TIME:</label>
+        <input onchange="calculateRemainingSample()" id="decayTimeInput" oninput="getSlideFromInput()" value="0" /><span> years </span>
+        <span>(0</span><input onchange="calculateRemainingSample()" id="decayTimeSlider" type="range" oninput="getInputFromSlide()" min="0" max="100" value="0" /> <span>1000)</span>
+      </div>
+    </section>
+    <section class="result">
+      <p><span>REMAINING SAMPLE: </span><span id="output"></span><span>g</span></p>
+      <button type="button" id="resetButton" onclick="reset()">RESET</button>
+    </section>
+    <div id="atomsGoHere">
+
+    </div>
+  </body>
+</html>
