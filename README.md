@@ -5,7 +5,7 @@
 * I used Sketch to create a wireframe indicating the UI features I wanted to include and the layout for my application. Although it is not identical to the finished product, it acted as a guide throughout my development process.
 
 <p align="center">
-  <img height=280 alt="wireframe" src="SSWireframe.png">
+  <img height=280 alt="wireframe" src="wireframe.png">
 </p>
 
 ## How I found the challenge
