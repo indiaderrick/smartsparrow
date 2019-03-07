@@ -104,3 +104,25 @@ function reset(){
 //     sliderPosition = minSliderPosition + (Math.log(inputValue) - minVal)/ scale;
 //   }
 // };
+
+
+// function mostFrequent(arrayToTest){
+// let maxCount = -1;
+// let maxItem = null;
+// const count = {};
+// console.log(arrayToTest.length);
+// for(let i = 0; i < arrayToTest.length; i++){
+// 	if(!count.hasOwnProperty(i)){
+// 	console.log('this is', !count.hasOwnProperty(i));
+// 		count[i] = 1;
+//        } else {
+// 		count[i] += 1;
+//        }
+// 	if(count[i] > maxCount){
+// 		maxCount = count[i];
+// 		maxItem = i;
+//     }
+// console.log('count now', count);
+// }
+// return maxItem;
+// }
